@@ -1,0 +1,23 @@
+{
+  "name": "web-audio-express-template",
+  "version": "1.0.0",
+  "description": "This is a starting point to create sketches with ToneJs on a simple express server.  The intention is to duplicate this before modifying",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify client/application.js -o public/app.js -v",
+    "build": "browserify client/application.js -o public/app.js --debug",
+    "start": "npm run watch & nodemon server.js"
+  },
+  "author": "Sean Barrett",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "tone": "^14.7.77"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "nodemon": "^2.0.15",
+    "watchify": "^4.0.0"
+  }
+}
